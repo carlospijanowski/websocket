@@ -21,8 +21,8 @@
                     console.log('greetings: ' + greeting.body)
                 })
 
-                stompClient.send('/app/chat', {}, JSON.stringify({name: 'Tatiana'}))
-                stompClient.send('/app/chat', {}, JSON.stringify({name: 'carlos'}))
+                stompClient.send('/app/chat', {}, JSON.stringify({name: 'Caminho feliz!!!'}))
+                stompClient.send('/app/chat', {}, JSON.stringify({name: 'provocando um erro'}))
 
             })
         });
