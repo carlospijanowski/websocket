@@ -29,7 +29,8 @@ public class WebsocketApplication {
     record GreetingResponse(String message) {}
 
     @Controller
-    public record GreetingsWebSocketController(SimpMessagingTemplate simpMessagingTemplate) {
+    public record GreetingsWebSocketController(
+            SimpMessagingTemplate simpMessagingTemplate) {
 
         @MessageExceptionHandler
         @SendTo("/topic/errors")

@@ -1,0 +1,8 @@
+# curl --location 'http://localhost:8080/send-greeting'
+#--header 'Content-Type: text/plain'
+#--data '"2024-01-28T00:28:26.100Z"'
+POST http://localhost:8080/send-greeting
+Content-Type: application/json
+
+{{$isoTimestamp}}
+
